@@ -1,4 +1,4 @@
-Welcome to my GitHub Projects Repository!
+Welcome to my GitHub 'Website' Repository!
 
 Here you will find the files pertaining to my personal website. 
 This website will be used to showcase my resume and projects 
