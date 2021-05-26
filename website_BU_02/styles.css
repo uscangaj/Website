@@ -1,0 +1,239 @@
+
+
+/* Master - styles */
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0px;
+	background-color: #1D2831;
+}
+
+
+/*
+layouts in grid, 
+small elements in flex box
+*/
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 13%;
+}
+
+
+
+/* Navigation - styles */
+.nav_wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+	color: #FFFFFF;
+	/* background-color: #AC772A; */
+	background-color: #9B6619;
+}
+
+
+.left_side {
+	display: flex;
+	text-transform: uppercase;
+	color: #E9E8DD;
+	font-size: 150%;
+	font-weight: 600;
+}
+
+.nav_brand {
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.75s;
+}
+.nav_brand a {
+	color: #D1CEB5;
+	text-decoration: none;
+	transition: color 0.75s;
+}
+
+
+.nav_brand:hover {
+	border-bottom: 1px solid #E9E8DD;
+}
+
+
+.nav_brand a:hover {
+	color: #E9E8DD;
+}
+
+
+.right_side {
+	display: flex;
+	text-transform: uppercase;
+}
+
+
+.nav_wrapper > .right_side > div {
+	display: flex;
+	margin-right: 20px;
+	font-size:0.85em;
+	text-transform: uppercase;
+}
+
+
+.nav_link_wrapper {
+	height: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.75s;
+}
+
+
+.nav_link_wrapper a {
+	color: #D1CEB5;
+	text-decoration: none;
+	transition: color 0.75s;
+}
+
+
+.nav_link_wrapper:hover {
+	border-bottom: 1px solid #E9E8DD;
+}
+
+
+.nav_link_wrapper a:hover {
+	color: #E9E8DD;
+}
+
+
+.active_navigation_link {
+	border-bottom: 1px solid #E9E8DD;
+}
+
+
+.active_navigation_link a {
+	color: #E9E8DD !important;
+}
+
+
+/* Portfolio - styles */
+.portfolio_wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 1%;
+}
+
+
+.portfolio_item_wrapper {
+	position: relative;
+	padding: 1%;
+}
+
+
+.portfolio_background_image {
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: brightness(90%);
+}
+
+
+.image_text_wrapper {
+	/* 
+	need to have 'position:relative' set for item
+	in order to use 'position:absolute' here
+	*/
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* left to right */
+	align-items: center; /* top to bottom */
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+.logo_wrapper img {
+	margin-bottom: 20px;
+	width: 50%;
+	filter: brightness(100%);
+}
+
+
+/*
+need to be more specific with selection.
+(i.e. based on whether being hovered over or not)
+*/
+.image_text_wrapper .subtitle {
+	font-weight: 600;
+	transition: 1.0s;
+	color: transparent;
+}
+
+
+.image_text_wrapper:hover .subtitle {
+	font-weight: 600;
+	color: lightseagreen;
+}
+
+
+.image_darken {
+	transition: 1.0s;
+	filter: brightness(10%);
+}
+
+
+/* About Page - styles */
+.two_column_wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.profile_image_wrapper img {
+	width: 50%;
+	padding-left: 25%;
+	/* margin: 0px; */
+	padding-top: 10%;
+}
+
+
+.profile_content_wrapper h1 {
+	color: lightseagreen;
+	padding: 0px;
+	padding-top: 10%;
+	margin: 0px;
+}
+
+
+.profile_content_wrapper h2 {
+	color: lightseagreen;
+	padding: 0px;
+	padding-bottom: 10%;
+	margin: 0px;
+}
+
+
+.profile_content_wrapper p {
+	color: #E9E8DD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
